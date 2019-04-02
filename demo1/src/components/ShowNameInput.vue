@@ -11,13 +11,14 @@ export default {
   name: 'showNameInput',
   data () {
     return {
-      myusername:this.$store.state.username
+      myusername:""
     }
   },
   methods:{
     changeInput(){
       console.log('myusername',this.myusername)
-      this.$store.state.username = this.myusername+"33"
+      // this.$store.state.username = this.myusername+"33"
+      this.$store.commit("changeUsername",this.myusername)
     }
   }
 } 
