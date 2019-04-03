@@ -1,7 +1,7 @@
 <template>
   <div>
     <p>属性-组件间通信-{{siblingsData}}</p>
-    <p>我今年-{{myage}}-岁</p>
+    <p>我今年-{{myage}}-岁-电话:{{phone}}</p>
     <ul>
       <li v-for="item in urlList">
       	<a :href="item.url" target="_blank">{{item.name}}</a>
@@ -12,6 +12,8 @@
 
 <script>
 import bus from '../event'
+
+import {mapState} from "vuex"
 export default {
   name: 'app',
   data () {
@@ -25,7 +27,13 @@ export default {
   computed:{
     myage(){
       return this.$store.state.age
-    }
+    },
+    // ...mapState({
+    //   phone:state=>state.phone
+    // })
+    ...mapState(['phone'])
+
+
   },
   methods:{
     receiveSib(){

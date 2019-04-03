@@ -6,6 +6,9 @@ const mutations = {
 	setAge(state,age=0){
 		console.log('ageee',age)
 		state.age=age;
+	},
+	setPhone(state,phone){
+		state.phone = phone
 	}
 }
 

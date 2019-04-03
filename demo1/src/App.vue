@@ -11,10 +11,10 @@
 </template>
 
 <script>
-import Link from "./components/Link.vue";
-import Link_bind from "./components/Link_bind.vue";
-import NameInput from "./components/NameInput.vue";
-import ShowNameInput from "./components/ShowNameInput.vue";
+import Link from "@/components/Link.vue";
+import Link_bind from "@/components/Link_bind.vue";
+import NameInput from "@/components/NameInput.vue";
+import ShowNameInput from "@/components/ShowNameInput.vue";
 export default {
   name: 'app',
   data () {
