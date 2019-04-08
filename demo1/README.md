@@ -19,7 +19,7 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
 
 
 
-=====
+=====2019.4.4
 
 熟悉了vuex通信机制
 了解
@@ -27,3 +27,8 @@ getters
 state
 mutations
 actions
+
+=====2019.4.7
+
+vue-router接入https://segmentfault.com/a/1190000009160934?_ea=1849098
+yarn 安装 yarn add vuex --dev

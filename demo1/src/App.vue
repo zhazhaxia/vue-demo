@@ -1,20 +1,14 @@
 
 <template>
   <div id="app">
-    <img class="img_pic" src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
-    <Link />
-    <Link_bind v-on:receiveChildData="recChildData" fatherProp="prop from father"/>
-    <NameInput />
-    <ShowNameInput />
+    <img class="img_pic" src="./assets/logo.png"><br>
+    <router-link  to="/pagetest">to page test</router-link><br>
+    <a href="javascript:;" v-on:click="toMainRouter">to page main</a>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import Link from "@/components/Link.vue";
-import Link_bind from "@/components/Link_bind.vue";
-import NameInput from "@/components/NameInput.vue";
-import ShowNameInput from "@/components/ShowNameInput.vue";
 export default {
   name: 'app',
   data () {
@@ -23,15 +17,12 @@ export default {
     }
   },
   methods:{
-    recChildData(data){
-      console.log('children data:',data)
+    toMainRouter(){
+      console.log('to main router')
+      this.$router.push("pagemain")
     }
   },
   components:{
-    Link,
-    Link_bind,
-    ShowNameInput,
-    NameInput,
   }
 }
 </script>
