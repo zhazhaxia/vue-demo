@@ -2,4 +2,4 @@
 
 vue模块的一些测试
 
-vuex，vue-router,axios,sourcemap
+vuex,vue-router,axios,sourcemap
