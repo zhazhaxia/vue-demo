@@ -41,3 +41,12 @@ router-view
 router-link
 this.$router.push("")
 路由的配置，不同路由类型配置，嵌套路由，动态路由
+
+
+======2019.4.9
+
+axios接入
+官方：https://github.com/axios/axios 
+中文：https://www.kancloud.cn/yunye/axios/234845
+图解：https://www.jianshu.com/p/13cf01cdb81f
+
