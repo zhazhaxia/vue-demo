@@ -49,4 +49,12 @@ axios接入
 官方：https://github.com/axios/axios 
 中文：https://www.kancloud.cn/yunye/axios/234845
 图解：https://www.jianshu.com/p/13cf01cdb81f
+可以拦截请求
+在mounted或者created里面都可以发送异步请求数据，更新状态（4.10）
 
+  
+=======2019.4.10
+
+nextTick
+在Vue生命周期的created()钩子函数进行的DOM操作一定要放在Vue.nextTick()的回调函数中
+https://www.jianshu.com/p/a7550c0e164f
