@@ -34,6 +34,9 @@ export default {
       this.age++
     },
     setPhone(){
+      setTimeout(()=>{
+       this.test(); 
+      })
       this.$store.commit("setPhone",Math.random())
     }
   }
