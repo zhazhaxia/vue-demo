@@ -20,4 +20,5 @@ async function start(){
 	}))
 
 	consumer.destroy();
+	console.log(process.memoryUsage());
  }
