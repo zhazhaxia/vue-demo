@@ -1,13 +1,17 @@
 .DS_Store
 demo1/node_modules/
 demo2/node_modules/
+demo*/node_modules/
 demo1/dist/
 demo2/dist/
+demo*/dist/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 demo1/test/unit/coverage/
 demo2/test/unit/coverage/
+demo*/test/unit/coverage/
+node_modules/
 
 # Editor directories and files
 .idea
