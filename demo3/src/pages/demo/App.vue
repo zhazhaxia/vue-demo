@@ -1,23 +1,17 @@
 <template>
-  <div class="demo1">
-    demo1
-    <Test></Test>
+  <div class="demo">
+    demo
   </div>
 </template>
 
 <script>
-import Test from '../../components/test'
 import { sleep } from '../../utils/sleep'
 export default {
-  name: 'Demo1',
-
+  name: 'Demo',
   components: {
-    Test
   },
-
   mounted () {
     sleep(3)
   }
 }
 </script>
-

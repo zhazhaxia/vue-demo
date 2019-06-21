@@ -37,7 +37,11 @@ module.exports = {
         .set("filename", `./[name].[hash].js`)
         .set("chunkFilename", `./[name].[hash].js`)
     );
-    config.devServer.set('disableHostCheck', true);//禁用host检查
+  },
+  devServer:{
+    port:8081,
+    disableHostCheck:true,//禁用host检查,可以用op.kg.qq.com访问页面
+    open:false,
   },
   configureWebpack:
     process.env.NODE_ENV === "production"
