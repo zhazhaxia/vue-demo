@@ -32,10 +32,20 @@ module.exports = {
     config.resolve.alias
       .set("@", resolve("src"))
       .set("@comp", resolve("src/components"));
-    config.when(isProd, config =>
+    config.when(isProd, config =>{
+      // config.module.rule('images')
+      //   .test(/\.(png|jpe?g|gif|webp)(\?.*)?$/)
+      //   .use('url-loader')
+      //   .loader('file-loader')
+      //   .options({
+      //       name: `img/[name].[hash].[ext]?max_age=36148900000`,
+      //   })
+
+
       config.output
         .set("filename", `./[name].[hash].js`)
-        .set("chunkFilename", `./[name].[hash].js`)
+        .set("chunkFilename", `./[name].[hash].js`);
+    }
     );
   },
   devServer:{

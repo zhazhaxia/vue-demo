@@ -1,6 +1,7 @@
 <template>
   <div class="demo">
     demo
+    <img src="./img/test.jpg" />
   </div>
 </template>
 
